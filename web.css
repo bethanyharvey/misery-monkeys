@@ -1,14 +1,9 @@
 /* For responsive website styling. If other formats will also need it, it goes in base, fonts, or colors. */
 
 
-/*
-@import url("../style/base.css");*/
-
-
 /* Import web fonts */
 
-
-
+/* TODO: Import Nebula */
 @font-face {
   font-family: "Nebula";
   font-weight: bold;
@@ -18,9 +13,8 @@
 @font-face {
   font-family: "Exo 2";
   font-weight: 700;
-  src: url(OEBPS/Fonts/Exo-2-Bold.ttf);
+    src: url('https://fonts.googleapis.com/css?family=Exo+2');
 }
-
 
 @font-face {
     font-family: 'Exo 2';
@@ -68,13 +62,15 @@ body {
   max-width: min(100%,70em);
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
+  hyphens: auto;
+  overflow-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+}
 
-      hyphens: auto;
-      overflow-wrap: break-word;
-      text-rendering: optimizeLegibility;
-      font-kerning: normal;
-    }
-
+section {
+  break-inside: avoid;
+}
 
 h1.title {
   font-size: 3em;
@@ -84,43 +80,41 @@ h1.title {
   text-transform: uppercase;
   color: var(--title-color);
 }
-h2 {
-  font-size: 2em;
+
+h2, h3, h4, h5 {
+  padding-left: 0.5em;
+  margin-left: -0.5em;
   font-family: var(--heading-font);
   font-weight: bold;
-  break-after: avoid;
   break-inside: avoid;
+  break-after: avoid;
+}
+
+
+h2,
+h3 {
+  margin-bottom: 0.25em;
+}
+
+h2 {
+  font-size: 2em;
   break-before: page;
   margin-top: 2em;
-  margin-bottom: 0;
-  padding-bottom: 0;
-      background-color: var(--h2-bg-color);
-    color: var(--h2-text-color);
+  background-color: var(--h2-bg-color);
+  color: var(--h2-text-color);
 }
 h3 {
   font-size: 1.75em;
-  font-family: var(--heading-font);
-  font-weight: bold;
-  break-after: avoid;
-  break-inside: avoid;
-  margin-bottom: 0;
   margin-top: 1em;
-      background-color: var(--h3-bg-color);
-    color: var(--h3-text-color);
-    padding-left: 0.5em;
-    margin-left: -0.5em;
+  background-color: var(--h3-bg-color);
+  color: var(--h3-text-color);
 }
-h4 {
-  font-size: 1.2em;
-  margin-top: 1.5em;
+h4, h5 {
   margin-bottom: 0;
   padding-bottom: 0;
-  break-after: avoid;
-  font-weight: bold;
-  font-family: var(--heading-font);
-      color: var(--accent1-md);
-    padding-left: 0.5em;
-    margin-left: -0.5em;
+  font-size: 1.25em;
+  margin-top: 1.5em;
+  color: var(--accent1-md);
 }
 p {
   margin-top: 0.5em;
@@ -131,18 +125,12 @@ blockquote {
   margin: 2em;
   font-style: italic;
   break-inside: avoid;
-  border: none;
   padding: 1em;
-      background-color: var(--accent2-lt);
-    border: 1px solid var(--accent2-md);
+  background-color: var(--accent2-lt);
+  border: 1px solid var(--accent2-md);
+  color: var(--main-text-color);
 }
-.footer {
-  border: 1px solid;
-  break-inside: avoid;
-  padding: 1em;
-  margin-top: 2em;
-  font-size: smaller;
-}
+
 ol, ul {
   margin-top: 0.5em;
   break-inside: avoid;
@@ -155,62 +143,66 @@ ul li::before {
   font-family: "Noto Sans Symbol 2", "open symbol", "wingdings", "deja vu", verdana, sans-serif;
   font-weight: bold;
   padding-right: 0.5em;
+  color: var(--accent2-dk);
+  text-shadow:
+  -1px 0px 1px var(--accent2-lt),
+  0px 1px 2px var(--accent1-dk), 
+  1px 0px 2px var(--accent1-dk),
+  0px -1px 1px var(--accent2-lt);
 }
 
 
 /* big numbers in front of list items */
-h4.dropcap::first-letter, div.dropcap p::first-letter {
+h4.dropcap::first-letter, div.dropcap p::first-letter,
+h4.step::first-letter,
+div#dice-results p::first-letter{
   font-size: xx-large;
   font-weight: bold;
   font-family: var(--heading-font);
-      text-shadow: var(--accent1-dk);
-    color: var(--accent1-md);
+  text-shadow:
+    -1px 0px 1px var(--accent2-lt),
+    0px 1px 2px var(--accent1-dk),
+    1px 0px 2px var(--accent1-dk),
+    0px -1px 1px var(--accent2-lt);
+  color: var(--accent1-md);
+  padding-right: 0.25em;
 }
-section {
-  break-inside: avoid;
-}
-/* Big numbers in front of steps */
-h4.step::first-letter,
-div#dice-results p::first-letter {
-    font-weight: bold;
-    font-family: var(--heading-font);
-        text-shadow: var(--accent1-dk);
-    color: var(--accent1-md);
-}
+
 
 
 table {
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
 }
 
 table caption {
-    color: var(--accent3-dk);
+  color: var(--accent3-dk);
 }
 
 
-/* Zebra Stripes */
+/* Stripes */
 
 ol li:nth-child(even),
 tr:nth-child(even) {
-    background-color: var(--main-bg-color);
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
 }
 
 ol li:nth-child(odd),
 tr:nth-child(odd) {
-    background-color: var(--accent1-lt);
+  background-color: var(--accent1-lt);
+  color: var(--main-text-color);
 }
-
-
-
 
 
 /* Boxes and asides */
 
-
-
 #credits,
-.footer {
-    background-color: var(--accent2-lt);
-    border: 1px solid var(--accent2-md);
+.footer,
+footer {
+  background-color: var(--accent2-lt);
+  border: 1px solid var(--accent2-md);
+  break-inside: avoid;
+  padding: 1em;
+  margin-top: 2em;
 }
