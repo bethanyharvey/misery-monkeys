@@ -1,0 +1,216 @@
+/* For responsive website styling. If other formats will also need it, it goes in base, fonts, or colors. */
+
+
+/*
+@import url("../style/base.css");*/
+
+
+/* Import web fonts */
+
+
+
+@font-face {
+  font-family: "Nebula";
+  font-weight: bold;
+  font-stretch: semi-expanded;
+  src: url(fonts/Nebula-Bold.ttf);
+}
+@font-face {
+  font-family: "Exo 2";
+  font-weight: 700;
+  src: url(OEBPS/Fonts/Exo-2-Bold.ttf);
+}
+
+
+@font-face {
+    font-family: 'Exo 2';
+    src: url('https://fonts.googleapis.com/css?family=Exo+2');
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('https://fonts.googleapis.com/css?family=Orbitron');
+} 
+
+/* Set variables */
+
+:root {
+    --heading-font:
+        'Nebula','Orbitron', 'Oxanium', 'Goldman', 'Archivo', 'Verdana', sans-serif;
+    --main-text-font: 'Exo 2', 'Rubik', 'Work Sans', 'Archivo', 'Open Sans', Verdana, Arial, sans-serif;
+    --symbol-font: 'Noto Sans Symbols 2', 'Open Symbol', 'Wingdings', sans-serif;
+    --accent1-lt: hsl(260, 100%, 95%);
+    --accent1-md: hsl(260, 50%, 40%);
+    --accent1-dk: hsl(260, 71%, 20%);
+    --accent2-lt: hsl(43, 100%, 90%);
+    --accent2-md: hsl(43, 100%, 70%);
+    --accent2-dk: hsl(43, 100%, 50%);
+    --accent3-lt: hsl(65, 80%, 80%);
+    --accent3-md: hsl(65, 70%, 50%);
+    --accent3-dk: hsl(65, 100%, 30%);
+
+    --main-bg-color: white;
+    --main-text-color: black;
+    --title-color: var(--accent2-dk);
+    --h2-text-color: var(--accent2-md);
+    --h2-bg-color: var(--accent1-dk);
+    --h3-bg-color: var(--accent2-lt);
+    --h3-text-color: var(--accent1-dk);
+    --h4-text-color: var(--accent1-md);
+}
+
+html {
+font-family: var(--main-text-font);
+}
+body {
+  margin: 1em auto;
+  padding: 3em;
+  max-width: min(100%,70em);
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+
+
+h1.title {
+  font-size: 3em;
+  text-align: center;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+h2 {
+  font-size: 2em;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  break-after: avoid;
+  break-inside: avoid;
+  break-before: page;
+  margin-top: 2em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+      background-color: var(--h2-bg-color);
+    color: var(--h2-text-color);
+}
+h3 {
+  font-size: 1.75em;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  break-after: avoid;
+  break-inside: avoid;
+  margin-bottom: 0;
+  margin-top: 1em;
+      background-color: var(--h3-bg-color);
+    color: var(--h3-text-color);
+    padding-left: 0.5em;
+    margin-left: -0.5em;
+}
+h4 {
+  font-size: 1.2em;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  break-after: avoid;
+  font-weight: bold;
+  font-family: var(--heading-font);
+      color: var(--accent1-md);
+    padding-left: 0.5em;
+    margin-left: -0.5em;
+}
+p {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  break-inside: avoid;
+}
+blockquote {
+  margin: 2em;
+  font-style: italic;
+  break-inside: avoid;
+  border: none;
+  padding: 1em;
+      background-color: var(--accent2-lt);
+    border: 1px solid var(--accent2-md);
+}
+.footer {
+  border: 1px solid;
+  break-inside: avoid;
+  padding: 1em;
+  margin-top: 2em;
+  font-size: smaller;
+}
+ol, ul {
+  margin-top: 0.5em;
+  break-inside: avoid;
+}
+ul {
+  list-style-type: none;
+}
+ul li::before {
+  content: "☆";
+  font-family: "Noto Sans Symbol 2", "open symbol", "wingdings", "deja vu", verdana, sans-serif;
+  font-weight: bold;
+  padding-right: 0.5em;
+}
+
+
+/* big numbers in front of list items */
+h4.dropcap::first-letter, div.dropcap p::first-letter {
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: var(--heading-font);
+      text-shadow: var(--accent1-dk);
+    color: var(--accent1-md);
+}
+section {
+  break-inside: avoid;
+}
+/* Big numbers in front of steps */
+h4.step::first-letter,
+div#dice-results p::first-letter {
+    font-weight: bold;
+    font-family: var(--heading-font);
+        text-shadow: var(--accent1-dk);
+    color: var(--accent1-md);
+}
+
+
+table {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+table caption {
+    color: var(--accent3-dk);
+}
+
+
+/* Zebra Stripes */
+
+ol li:nth-child(even),
+tr:nth-child(even) {
+    background-color: var(--main-bg-color);
+}
+
+ol li:nth-child(odd),
+tr:nth-child(odd) {
+    background-color: var(--accent1-lt);
+}
+
+
+
+
+
+/* Boxes and asides */
+
+
+
+#credits,
+.footer {
+    background-color: var(--accent2-lt);
+    border: 1px solid var(--accent2-md);
+}

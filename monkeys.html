@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Ethan Harvey" />
+  <meta name="dcterms.date" content="2022-12-02" />
+  <meta name="description" content="A ttrpg about monkeys in dubious control of a spaceship, based on Lasers &amp; Feelings. Created for the Transformed Titles Jam." />
+  <title>Misery Monkeys in Space</title>
+  <style>
+
+    body {
+      margin: 0 auto;
+      max-width: 60em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+    noprint {display: hidden;}
+    section {break-inside: avoid;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="web.css" media="screen" />
+</head>
+<body>
+<header id="title-block-header">
+
+<h1 class="title" data-number="1"
+id="Group.xhtml#misery-monkeys-in-space">Misery Monkeys in Space</h1>
+
+</header>
+
+<blockquote>
+<p>You’re a crew of monkeys. You’re all miserable, for various reasons.
+But you’ve somehow ended up on a spaceship, and nobody else seems to be
+controlling it. So it’s yours now, right? You have a spaceship; the
+entire galaxy is open to you!</p>
+<p>Too bad someone wants to stop you. Someone who probably knows a lot
+more about space than you do, and will do terrible things to keep you
+from reaching your destination. Why? Who knows? You’re just monkeys; you
+didn’t ask for any of this. But tell that to the unfeeling void of
+space.</p>
+<p>You may want to learn to use that laser cannon.</p>
+</blockquote>
+<section id="Group.xhtml#for-the-group" data-number="1.1">
+<h2 data-number="1.1" id="Group.xhtml#sigil_toc_id_1">For the Group</h2>
+<section id="Group.xhtml#what-happened" data-number="1.1.1">
+<h3 data-number="1.1.1"
+id="Group.xhtml#sigil_toc_id_2">What Happened?</h3>
+<p>As a group, decide how you got into this predicament. Pick a
+backstory from the list or create your own.</p>
+<ul>
+<li>You’re the human crew, turned into monkeys in a wormhole
+incident.</li>
+<li>You’re test subjects in an experiment.</li>
+<li>You saw what the humans were doing to Earth and got out while you
+could.</li>
+<li>You’re being sent to explore a world where humans can’t survive but
+monkeys can.</li>
+<li>You were abducted by aliens, but they have vanished, leaving you
+alone on their ship.</li>
+<li>You led a mutiny against the human crew.</li>
+</ul>
+</section>
+<section id="Group.xhtml#create-the-ship" data-number="1.1.2">
+<h3 data-number="1.1.2" id="Group.xhtml#sigil_toc_id_3">Create the
+Ship</h3>
+<p>As a group, pick two features your ship has, and one thing that’s
+wrong with it.</p>
+<h4 data-number="1.1.2.1" id="Group.xhtml#features">Features</h4>
+<ul>
+<li>Well-armed</li>
+<li>Fast</li>
+<li>Tough</li>
+<li>Shielded</li>
+<li>Sentient</li>
+<li>Gigantic</li>
+</ul>
+<h4 data-number="1.1.2.2" id="Group.xhtml#whats-wrong-with-it">What’s
+wrong with it?</h4>
+<ul>
+<li>It’s running low on fuel.</li>
+<li>It has a tracking device you don’t know about.</li>
+<li>It’s haunted.</li>
+<li>The computer speaks a language you don’t understand.</li>
+<li>The tachyon carburetor is misaligned, causing an anomaly in the
+space-time continuum.</li>
+<li>One of you has been chewing the power cables.</li>
+</ul>
+</section>
+</section>
+<p><span id="Player.xhtml"></span></p>
+<section id="Player.xhtml#misery-monkeys-in-space" class="title"
+data-number="1">
+<section id="Player.xhtml#for-each-player" data-number="1.2">
+<h2 data-number="1.2" id="Player.xhtml#sigil_toc_id_4">For Each
+Player</h2>
+<section id="Player.xhtml#create-your-monkey" data-number="1.2.1">
+<h3 data-number="1.2.1" id="Player.xhtml#sigil_toc_id_5">Create Your
+Monkey</h3>
+<p>You’re not restricted to the examples; feel free to create your
+own.</p>
+<h4 class="dropcap" data-number="1.2.1.1"
+id="Player.xhtml#choose-a-physical-detail">1 Choose a physical
+detail</h4>
+<ul>
+<li>Screechy voice</li>
+<li>Bushy mustache</li>
+<li>Fluffy red fur</li>
+<li>Blue face</li>
+<li>Sharp fangs</li>
+<li>Looong tail</li>
+</ul>
+<h4 class="dropcap" data-number="1.2.1.2"
+id="Player.xhtml#why-are-you-miserable">2 Why are you miserable?</h4>
+<ul>
+<li>You miss someone on Earth.</li>
+<li>Intelligence came with existential angst.</li>
+<li>Your fellow monkeys are annoying.</li>
+<li>The terrifying vacuum of space.</li>
+<li>No trees on the spaceship.</li>
+<li>Fleas.</li>
+</ul>
+<h4 class="dropcap" data-number="1.2.1.3"
+id="Player.xhtml#choose-your-number-from-2-to-5">3 Choose your number,
+from 2 to 5</h4>
+<p>The higher the number, the better you are at MISERY (doing hard,
+boring things.) The lower the number, the better you are at being a
+MONKEY (acting on instinct, having fun.)</p>
+<h4 class="dropcap" data-number="1.2.1.4"
+id="Player.xhtml#choose-one-thing-you-like-to-do">4 Choose one thing you
+like to do</h4>
+<p>There’s no list to choose from. Just make something up. Each player
+should pick something different.</p>
+<h4 class="dropcap" data-number="1.2.1.5"
+id="Player.xhtml#choose-one-thing-you-hate-to-do">5 Choose one thing you
+hate to do</h4>
+<p>Each player should pick something different.</p>
+<h4 class="dropcap" data-number="1.2.1.6"
+id="Player.xhtml#give-your-monkey-a-name">6 Give your monkey a name</h4>
+<p>Something silly, something sad, or something that could be
+either.</p>
+<h4 class="dropcap" data-number="1.2.1.7"
+id="Player.xhtml#what-do-you-want">7 What do you want?</h4>
+<p>Pick a general category and fill in the details as you think of
+them:</p>
+<ul>
+<li>Food</li>
+<li>Safety</li>
+<li>Adventure</li>
+<li>Companionship</li>
+<li>Knowledge</li>
+<li>Revenge</li>
+</ul>
+</section>
+<section id="Player.xhtml#rolling-the-dice" data-number="1.2.2">
+<h3 data-number="1.2.2" id="Player.xhtml#sigil_toc_id_6">Rolling the
+Dice</h3>
+<p>When you do something risky, roll 1d6. Roll an extra die if something
+about your character would help, and another if this is the
+<strong>thing you like</strong>.</p>
+<ul>
+<li>If you’re using <strong>MISERY</strong> (not fun), you want to roll
+<strong>under</strong> your number.</li>
+<li>If you’re using <strong>MONKEY</strong> (fun), you want to roll
+<strong>over</strong> your number.</li>
+</ul>
+<div class="dropcap">
+<p>0 <strong>If none of your dice succeed</strong>, you make the
+situation worse. The GM will tell you how.</p>
+<p>1 <strong>If one die succeeds</strong>, you do it, but at a cost. The
+GM will tell you what goes wrong or how it doesn’t work the way you
+expected.</p>
+<p>2 <strong>If two dice succeed</strong>, you do it, and it works.</p>
+<p>3 <strong>If three dice succeed</strong>, you do it spectacularly
+well! The GM will tell you what extra effect you get.</p>
+</div>
+<p><strong>If you roll your number exactly</strong>, something clicks in
+your sad monkey brain. Ask the GM a question from the list. They’ll
+answer you honestly.</p>
+<ul>
+<li>How do they really feel about…?</li>
+<li>How could I get them to …?</li>
+<li>What am I missing?</li>
+<li>What’s the best way to …?</li>
+<li>What’s really going on here?</li>
+</ul>
+<p>With this information in mind, you can change your action and roll
+again.</p>
+</section>
+<section id="Player.xhtml#simian-solidarity" data-number="1.2.3">
+<h3 data-number="1.2.3" id="Player.xhtml#sigil_toc_id_7">Simian
+Solidarity</h3>
+<p>To help someone who’s rolling, say how you help and roll. If any of
+your dice succeed, give the other monkey an extra die. If it’s the
+<strong>thing you hate to do</strong>, they’ve had to do it for you
+before! Give them two extra dice instead of one.</p>
+</section>
+</section>
+</section>
+<p><span id="GM.xhtml"></span></p>
+<section id="GM.xhtml#misery-monkeys-in-space" class="title"
+data-number="1">
+<section id="GM.xhtml#gm" data-number="1.3">
+<h2 data-number="1.3" id="GM.xhtml#sigil_toc_id_8">For the GM</h2>
+<section id="GM.xhtml#create-the-situation" data-number="1.3.1">
+<h3 data-number="1.3.1" id="GM.xhtml#sigil_toc_id_9">Create the
+Situation</h3>
+<p>Roll, or choose, one option from each list.</p>
+<h4 data-number="1.3.1.1" id="GM.xhtml#the-ship-is-on-course-for">The
+ship is on course for…</h4>
+<ol type="1">
+<li>Earth 3</li>
+<li>Dread Nebula Station</li>
+<li>A distant planet, thought to be uninhabited</li>
+<li>The heart of the Cerulean Empire</li>
+<li>A newly discovered wormhole</li>
+<li>The Monkeys have no idea. (Re-roll &amp; keep the result
+secret)</li>
+</ol>
+<h4 data-number="1.3.1.2" id="GM.xhtml#but-are-trying-to-stop-it">But …
+are trying to stop it</h4>
+<ol type="1">
+<li>The Solar Queen</li>
+<li>The cops</li>
+<li>Digital ghosts</li>
+<li>Space wizards</li>
+<li>Alternate-dimension Monkeys</li>
+<li>The Cerulean Emperor</li>
+</ol>
+<h4 data-number="1.3.1.3" id="GM.xhtml#with">With…</h4>
+<ol type="1">
+<li>A big-ass laser cannon</li>
+<li>An insectoid army</li>
+<li>The possessed former crew</li>
+<li>The power of love</li>
+<li>Mind fungus</li>
+<li>Giant robots</li>
+</ol>
+</section>
+<section id="GM.xhtml#run-the-game" data-number="1.3.2">
+<h3 data-number="1.3.2" id="GM.xhtml#sigil_toc_id_10">Run the Game</h3>
+<p>Give the players room to explore, but whenever play slows down,
+introduce signs of a threat and ask what the monkeys do about it. Ask
+for a roll whenever someone could fail, if something interesting could
+happen as a result. A roll always changes something, whether they
+succeed or fail. Use failures and complications to push the story
+forward.</p>
+<p>Starting out, the characters may be smarter-than-average monkeys, but
+they’re still <em>monkeys</em>, on a <em>spaceship</em>, and they’ll
+probably have to learn how to steer the thing. If that’s boring, skip
+it.</p>
+<p>Don’t be afraid to make drastic changes or completely leave the
+randomly generated plot behind; it’s just there to get you started.</p>
+<p>Adjust the plot and tone according to the players’ interests. The
+absurd premise doesn’t mean the game has to be pure slapstick. There’s
+always room for some variety in the tone. If the players have picked
+high numbers and more grounded options, they’re probably hoping for some
+serious moments. Make the threats creepy. Emphasize the danger of the
+monkeys’ plight, and look for angst in the silliness.</p>
+<p>Or, if your players aren't into that, just be as ridiculous and
+over-the-top as possible.</p>
+</section>
+</section>
+</section>
+<p><span id="Credits.xhtml"></span></p>
+<section id="Credits.xhtml#misery-monkeys-in-space" class="title"
+data-number="1">
+<section id="Credits.xhtml#gm" data-number="1.3">
+<section id="Credits.xhtml#run-the-game" data-number="1.3.2">
+<div class="footer credits">
+<p>Misery Monkeys in Space by Ethan Harvey is licensed under a <a
+href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0
+license</a>. Do whatever you want with this ridiculous thing, and let
+others do the same.</p>
+<p>Based on <a href="http://www.onesevendesign.com/laserfeelings">Lasers
+&amp; Feelings: The Doubleclicks Tribute RPG</a> by <a
+href="http://www.onesevendesign.com">John Harper</a></p>
+<p>Cover image adapted from art by <a
+href="https://www.freepik.com/vectorpocket">vectorpocket</a>. Icons by
+<a href="https://www.freepik.com">Freepik</a>.</p>
+<p>Thanks/blame to <a href="https://twitter.com/SabineV5">Sabine
+V</a></p>
+<p>Version 1.2.1, December 2022. Any updates will be available at <a
+href="https://ethanharvey.itch.io/misery-monkeys">https://ethanharvey.itch.io/misery-monkeys</a></p>
+</div>
+</section>
+</section>
+</section>
+<p><span id="nav.xhtml"></span></p>
+<nav epub:type="landmarks" id="landmarks" hidden>
+<ol>
+<li><a href="#cover.xhtml" class="cover">Cover</a></li>
+<li><a href="#Credits.xhtml#misery-monkeys-in-space"
+class="copyright-page">Copyright page</a></li>
+<li><a href="#cover.xhtml"
+class="acknowledgments">Acknowledgements</a></li>
+</ol>
+</nav>
+</body>
+</html>
