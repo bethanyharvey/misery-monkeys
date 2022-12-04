@@ -80,7 +80,7 @@ h1.title {
   color: var(--title-color);
 }
 
-h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
   padding-left: 0.5em;
   margin-left: -0.5em;
   font-family: var(--heading-font);
@@ -88,7 +88,6 @@ h2, h3, h4, h5 {
   break-inside: avoid;
   break-after: avoid;
 }
-
 
 h2,
 h3 {
